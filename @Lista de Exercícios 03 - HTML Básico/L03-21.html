@@ -1,0 +1,52 @@
+<!-- 15. A família Lérgica está dando uma educação financeira a seus filhos desde cedo. Eles possuem 3 filhos, chamados Huguinho, Zezinho e Luizinho e cada um possui um porquinho onde depositam moedas de R$0,50 (sempre desse valor). Para saber o quanto cada filho vai economizar, crie um programa em HTML/JS que:
+
+a) Solicite a quantidade de moedas depositadas por cada filho (note que são 3 campos de entrada)
+b) Calcule quanto cada filho guardou, em R$ (lembre que sempre depositam moedas de R$0,50)
+c) Exiba 3 alertas, um para cada filho, com mensagens como esta: "O Huguinho economizou R$X pois fez Y depósitos" -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+     Quantas moedas cada filho depositou?<br> <br>
+     <input placeholder="Huguinho" id="filho1"> <br> <br>
+     <input placeholder="Zezinho" id="filho2"> <br> <br>
+     <input placeholder="Luizinho" id="filho3"> <br> <br>
+     <button onclick="calcular()">economizar</button>
+
+        <div id="msg" style="display: none" >
+                
+            <span>
+            O <b style="color: red">Huguinho</b>  economizou R$X pois fez Y depósitos <br>
+            O <b style="color: blue">Zezinho</b> economizou R$X pois fez Y depósitos <br>
+            O <b style="color:green">Luizinho</b> economizou R$X pois fez Y depósitos <br>
+            </span>
+            
+
+        </div>
+    </body>
+
+
+</html>
+
+
+<script>
+    function calcular(){
+        msg.style.display="block"
+
+        var cofre1 = filho1.value * 0.50;
+        var cofre2 = filho2.value * 0.50;
+        var cofre3 = filho3.value * 0.50;
+
+        div_mensagem.innerHTML = `O Huguinho economizou R$${cofre1} pois fez ${filho1.value} depósitos`;
+        div_mensagem.innerHTML =`O Zezinho economizou R$${cofre2} pois fez ${filho2.value} depósitos`;
+        div_mensagem.innerHTML = `O Luizinho economizou R$${cofre3} pois fez ${filho3.value} depósitos`;
+    }
+</script>

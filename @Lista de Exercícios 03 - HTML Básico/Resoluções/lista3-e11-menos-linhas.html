@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 1 - q1</title>
+</head>
+<body>
+
+Nota da continuada:
+<input type="text" id="continuada"> <br>
+Nota da semestral:
+<input type="text" id="semestral"> <br>
+Nome do(a) aluno(a):
+<input type="text" id="aluno"> <br>
+
+<br><button onclick="calcular()">Calcular Média</button>
+
+</body>
+</html>
+
+<script>
+    function calcular() {
+        // calculando a média ao mesmo tempo que faz a porcentagem nos valores
+        var media = continuada.value * 0.4 + semestral.value * 0.6;
+
+        alert(`A média de ${aluno.value} será de ${media}`);    
+    }
+</script>

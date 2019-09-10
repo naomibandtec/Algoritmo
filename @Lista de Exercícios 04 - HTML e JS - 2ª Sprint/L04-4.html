@@ -1,0 +1,39 @@
+<!-- 4. Crie um programa em HTML/JS no qual:
+a) o usuário informe sua nota na escola
+b) ao clicar num botão "opinião da avó", exibir "Muito bem, que neto inteligente, porque tirou X"
+c) ao clicar num botão "opinião da mãe", exibir "Não fez mais que tua obrigação com essa nota X"
+
+Onde X é a nota que ele digitou tanto em b) quanto em c) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Qual a sua nota<input id="nota"><br><br>
+    <button onclick="exibirMsgVo()">opinião da avó</button> 
+    <button onclick="exibirMsgMae()">opinião da mãe</button><br><br>
+
+    <div id="msg">
+ 
+    </div>
+
+
+
+</body>
+</html>
+
+<script>
+    function exibirMsgVo(){
+        msg.innerHTML = `Muito bem, que neto inteligente, porque tirou ${nota.value}`;
+    }
+
+    function exibirMsgMae(){
+        msg.innerHTML = `Não fez mais que tua obrigação com essa nota ${nota.value}`;
+    }
+</script>

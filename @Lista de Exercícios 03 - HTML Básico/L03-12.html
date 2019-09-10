@@ -1,0 +1,36 @@
+<!-- 12. Túlio Milde é muito preocupado com o meio ambiente. E, ao invés de ficar postando memes e textões contra o governo por conta de desmatamentos e queimadas, resolveu fazer ações concretas em sua vida. A primeira foi economizar água da torneira, evitando desperdício. Túlio descobriu que uma torneira pingando desperdiça de em média 15 litros de água por minuto. Ele tem 3 torneiras em casa.
+
+Assim, crie um programa em HTML/JS que:
+
+a) Pergunte quantos minutos cada torneira ficou pingando (são 3 campos de entrada, um para cada torneira)
+b) Calcule o despercídio total conforme os valores informados em a)
+c) Exiba um alerta com uma frase como esta: "Suas 3 torneiras, juntas, desperdiçaram X litros de água" -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Quantos minutos a torneira ficou pingando?</p>
+        <input type="number" placeholder="torneira 1" id="torneira1"> <br> <br>
+        <input type="number" placeholder="torneira 2" id="torneira2"> <br> <br>
+        <input type="number" placeholder="torneira 3" id="torneira3"> <br> <br>
+        <button onclick="calcular()">Olhe o seu despercidio!!!</button>
+
+    </body>
+</html>
+
+<script>
+function calcular(){
+    var despercidio_torneira1= torneira1.value*15;
+    var despercidio_torneira2= torneira2.value*15;
+    var despercidio_torneira3= torneira3.value*15;
+    var despercidio_total= despercidio_torneira1+despercidio_torneira2+despercidio_torneira3;
+    
+    alert(`Suas 3 torneiras, juntas, desperdiçaram ${despercidio_total}litros de água`);
+}
+</script>

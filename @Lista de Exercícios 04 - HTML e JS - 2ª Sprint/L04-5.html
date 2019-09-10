@@ -1,0 +1,67 @@
+<!-- 5. Crie um programa em HTML/JS que:
+a) Solicite 2 números ao usuário
+b) tenha um botão para cada operação aritmética. Ao clicar em algum deles, exibir ABAIXO do botão UMA dessas frases:
+   A soma entre X e Y é Z
+   A diferença entre X e Y é Z
+   O produto entre X e Y é Z
+   A razão entre X e Y é Z   -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <span>Insira 2 numeros</span> <br><br>
+        <input type="text" placeholder="1° numero" id="numero1"><br><br>
+        <input type="text" placeholder="2° numero" id="numero2"><br><br>
+        <button onclick="somar()">Soma</button>
+        <button onclick="subtrair()">Subtração</button>
+        <button onclick="multiplicar()">Multiplicação</button>
+        <button onclick="dividir()">Divisão</button><br><br>
+
+        <div id="msg">
+
+        </div>
+
+
+    </body>
+</html>
+
+<script>
+    
+
+    function somar(){
+        var x = Number(numero1.value);
+        var y = Number(numero2.value);
+
+        msg.innerHTML =`A soma entre ${x} e ${y} é ${x+y}`;
+    }
+
+    function subtrair(){
+        var x = Number(numero1.value);
+        var y = Number(numero2.value);
+
+        msg.innerHTML =`A diferença ${x} e ${y} é ${x-y}`;
+    }
+
+    function multiplicar(){
+        var x = Number(numero1.value);
+        var y = Number(numero2.value);
+
+        msg.innerHTML =`O produto entre ${x} e ${y} é ${x*y}`;
+    }
+
+
+    function dividir(){
+        var x = Number(numero1.value);
+        var y = Number(numero2.value);
+
+        msg.innerHTML =`A razão entre ${x} e ${y} é ${x/y}`;
+    }
+
+</script>

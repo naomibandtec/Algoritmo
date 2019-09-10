@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    Quantos ingressos comuns:
+    <input type="text" id="qtd_comum"> <br>
+
+    Quantos ingressos estudante:
+    <input type="text" id="qtd_estudante"> <br>
+
+    Valor ingresso comum:
+    <input type="text" id="valor_comum"> <br>
+
+    <button onclick="calcular()">Calcular Arrecadação</button>
+</body>
+</html>
+
+<script>
+function calcular() {
+    var arr_comum = qtd_comum.value * valor_comum.value;
+    var arr_estud = qtd_estudante.value * valor_comum.value / 2;
+
+    var arr_total = arr_comum + arr_estud;
+
+    alert(`A arrecadação foi de R$${arr_total.toFixed(2)}`);
+
+}
+</script>

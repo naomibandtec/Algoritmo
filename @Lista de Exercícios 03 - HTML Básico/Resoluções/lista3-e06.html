@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 1 - q06</title>
+</head>
+<body>
+
+Qual seu idade? <input id="idade" autofocus> <br>
+
+<button onclick="calcular()">Calcular</button>
+    
+</body>
+</html>
+
+<script>
+function calcular() {
+    // criando duas VARIÁVEIS
+    var tempo_homem = 60 - idade.value;
+    var tempo_mulher = 50 - idade.value;
+    // criamos as variáveis "tempo_homem" e "tempo_mulher"
+
+    alert(`Se for homem faltam ${tempo_homem} anos p/ aposentar`);
+    alert(`Se for mulher faltam ${tempo_mulher} anos p/ aposentar`);
+}
+</script>

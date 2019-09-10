@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 1 - q17</title>
+</head>
+<body>
+    
+    <h2>Bairro e pets</h2>
+    
+    Seu bairro: <input type="text" id="bairro"> <br>
+    Quantos cachorros tem? <input type="text" id="cachorros"> <br>
+    <button onclick="pets()">Análise Pet</button>
+    <br><br>
+    
+    <div id="div_mensagem" style="display: none; color:red">
+    </div>
+</body>
+</html>
+
+<script>
+function pets() {
+    // montando a frase
+    var frase = `Você mora em ${bairro.value} e 
+                tem ${cachorros.value} cachorros`;
+    
+    // colocando a frase na 'div_mensagem'
+    div_mensagem.innerHTML = frase;
+
+    // deixando a 'div_mensagem' visível
+    div_mensagem.style.display = 'block';
+}
+</script>

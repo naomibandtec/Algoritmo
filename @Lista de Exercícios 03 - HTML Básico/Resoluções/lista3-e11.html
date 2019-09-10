@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 1 - q1</title>
+</head>
+<body>
+
+Nota da continuada:
+<input type="text" id="continuada"> <br>
+Nota da semestral:
+<input type="text" id="semestral"> <br>
+Nome do(a) aluno(a):
+<input type="text" id="aluno"> <br>
+
+<br><button onclick="calcular()">Calcular Média</button>
+
+</body>
+</html>
+
+<script>
+    function calcular() {
+        // calculando 40% da continuada e guardando numa variável
+        var nota_continuada = continuada.value * 0.4;
+
+        // calculando 60% da semestral e guardando numa variável
+        var nota_semestral = semestral.value * 0.6;
+
+        // calculando a média
+        var media = nota_continuada + nota_semestral;
+
+        alert(`A média de ${aluno.value} será de ${media}`);    
+    }
+</script>
+
+
+
+
+

@@ -1,0 +1,31 @@
+<!-- 8. Um estudante recebeu o Bilhete Único de estudante pela primeira vez e deseja saber quanto vai economizar por mês. O valor para estudante é metade do valor da passagem. Crie um programa em HTML/JS que:
+
+a) Pergunte a ele o valor da passagem
+b) Pergunte a ele quantas viagens fará por mês 
+c) Ao clicar num botão "Ver economia", deve ver um alerta com uma frase como esta: "Você economizará R$X por mês" -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+    Qual o valor da passagem inteira? <input type="number" id="vlr_passagem"> <br>
+    Quantas viagens vc faz por mês? <input type="number" id="qt_viagens"> <br>
+    <button onclick= "calcular()">Ver economia</button>
+    </body>
+
+</html>
+
+<script>
+    function calcular(){
+        var desconto = (vlr_passagem.value*qt_viagens.value)/2;
+
+        alert(`Você economizará R$${desconto} por mês`);
+    }
+
+</script>

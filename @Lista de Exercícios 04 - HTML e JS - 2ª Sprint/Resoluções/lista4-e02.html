@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 4 - q02</title>
+</head>
+<body>
+
+<h2>Lista 4 - Questão 02</h2>
+
+Quanto dinheiro terá em 6 meses?
+<input type="text" id="grana_6meses">
+<br>
+Quanto dinheiro terá em 3 anos?
+<input type="text" id="grana_3anos">
+<br>
+
+<button onclick="futuro()">Como estarei no futuro?</button>
+
+<div id="resultado" style="display: none">
+    <img src="img_6meses.jpg">
+    <span id="span_6meses"></span>
+    <br><br>
+    <img src="img_3anos.jpg">
+    <span id="span_3anos"></span>    
+</div>
+
+</body>
+</html>
+
+<script>
+    function futuro() {
+        span_6meses.innerHTML = `R$${Number(grana_6meses.value).toFixed(2)}`;
+        span_3anos.innerHTML = `R$${Number(grana_3anos.value).toFixed(2)}`;
+        resultado.style.display = 'block';
+    }
+</script>

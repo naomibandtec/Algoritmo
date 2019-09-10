@@ -1,0 +1,181 @@
+Lista de Exercícios 03 - HTML Básico
+1. Tente exibir algo como a bandeira da Holanda
+
+
+
+2. Tente exibir algo como a bandeira da Holanda, porém com uma borda na bandeira
+
+
+
+3. Crie uma página que solicite ao usuário que digite seu peso e altura.
+
+Deve haver um botão com o texto "Fale comigo".
+
+Ao clicar no botão, deve aparecer uma frase como esta numa caixinha de alerta: 
+
+"Você pesa X e tem Y de altura"
+Onde X e Y são os valores que o usuário digitou, claro
+
+
+
+4. Crie uma página que solicite ao usuário que digite o nome do time que torce e quantos mundiais de clube ele tem (Obs: não vale troféu Cachaça 51).
+
+Deve haver um botão com o texto "Amo meu time".
+
+Ao clicar no botão, deve aparecer uma frase como esta numa caixinha de alerta: 
+"O time X tem Y mundiais da FIFA"
+Onde X e Y são os valores que o usuário digitou, claro
+
+
+
+5. Crie uma página que solicite ao usuário que digite o nome da rua/avenida/vila e o número da casa onde mora.
+
+Deve haver um botão com o texto "Onde eu moro".
+
+Ao clicar no botão, deve aparecer uma frase como esta numa caixinha de alerta: 
+"Seu logradouro é X"
+Onde X é o valor que o usuário digitou no primeiro campo
+
+Depois, deve aparecer outro alerta:
+"O número do seu logradouro é Y"
+Onde Y é o valor que o usuário digitou no segundo campo
+
+
+
+6. Num determinado pais, a idade para se aposentar é:
+60 anos para homem e 50 para mulher. 
+Simule o tempo de aposentadoria com um programa em HTML/JS.
+Solicite a idade do usuário. Ao clicar num botão "Calcular", exiba 2 frases em sequência:
+"Se for homem faltam X anos p/ aposentar"
+"Se for mulher faltam Y anos p/ aposentar"
+
+
+7. Todo mundo adora pizza! Existem para todos os gostos! Crie um programa que ajude o grupo de amigos "Equipe Lantra" a saber quanto uma pizza vai custar para cada amigo.
+Solicite o valor da pizza e a quantidade de amigos que vão dividir o valor.
+Ao clicar num botão "#lovePizza", exiba um alerta com a frase
+  "Cada um dos X amigos vai pagar R$Y"
+ Onde X é a quantidade de amigos e Y é o resultado do cálculo que seu programa fará
+
+
+
+8. Um estudante recebeu o Bilhete Único de estudante pela primeira vez e deseja saber quanto vai economizar por mês. O valor para estudante é metade do valor da passagem. Crie um programa em HTML/JS que:
+
+a) Pergunte a ele o valor da passagem
+b) Pergunte a ele quantas viagens fará por mês 
+c) Ao clicar num botão "Ver economia", deve ver um alerta com uma frase como esta: "Você economizará R$X por mês"
+
+
+
+9. Um clube de futebol precisa de um programa para saber quanto arrecadou por jogo. Assim, crie um programa em HTML/JS que:
+
+a) Pergunte ao usuário a quantidade de ingressos de estudante vendidos
+b) Pergunte ao usuário a quantidade de ingressos comuns vendidos
+c) Pergunte ao usuário o valor do ingresso comum
+d) Calcule a arrecadação, considerando que um ingresso de estudante custa metade do ingresso comum
+e) Exiba um alerta com uma frase assim: "A arrecadação foi de R$X"
+
+
+
+10. No desenho animado Dragon Ball, existem personagens de uma raça chamada Sayajins. Eles possuem a seguinte característica: Quando estão em sua "forma normal", sua força (ou "ki") é normal. Quando estão na forma Super Sayajin, sua força (ou "ki") aumenta em 50x. Quando estão na forma Super Sayajin 2, sua força (ou "ki") aumenta em 100x. Crie um programa em HTML/JS que ajude a calcular o "ki" de um guerreiro Sayajin. 
+
+a) Solicite o nome do guerreiro
+b) Solicite o ki normal do guerreiro
+c) Ao clicar num botão "Ver ki em cada forma", exiba um alerta para a forma Super Sayajin e outro para Super Sayajin 2, exibindo seus respectivos "ki". Em ambas exiba o nome do guerreiro também
+
+
+
+11. Na faculdade Bandtec o aluno tem 2 notas: A da "avaliação continuada" e a da "avaliação semestral". A média final é a soma simples entre 40% da "continuada" e 60% da "semestral". Assim, para ajudar um aluno para saber o quanto precisa para passar e estagiar em empresas como Easynvest, C6Bank, Tivit, Banco Safra, Deloitte, HP etc, crie um programa em HTML/JS que:
+
+a) Solicite a nota que ele tirou na "continuada" e na "semestral"
+b) Solicite o nome do aluno
+c) Calcule sua média
+d) Exiba uma frase como esta "A média de NOME será de MEDIA". Onde NOME é o valor informado em b) e MEDIA, o valor calculado em c)
+
+
+
+12. Túlio Milde é muito preocupado com o meio ambiente. E, ao invés de ficar postando memes e textões contra o governo por conta de desmatamentos e queimadas, resolveu fazer ações concretas em sua vida. A primeira foi economizar água da torneira, evitando desperdício. Túlio descobriu que uma torneira pingando desperdiça de em média 15 litros de água por minuto. Ele tem 3 torneiras em casa.
+
+Assim, crie um programa em HTML/JS que:
+
+a) Pergunte quantos minutos cada torneira ficou pingando (são 3 campos de entrada, um para cada torneira)
+b) Calcule o despercídio total conforme os valores informados em a)
+c) Exiba um alerta com uma frase como esta: "Suas 3 torneiras, juntas, desperdiçaram X litros de água"
+
+
+
+13. Antônia Legre vai começar em seu primeiro emprego com carteira assinada após ser efetivada num estágio numa empresa de TI parceira da Bandtec. Enfim ela descobriu que quando um funcionário tem um salário de R$3.000,00, na verdade não cai esse valor em sua conta, pois pela CLT temos vários descontos. Crie um programa em HTML/JS que:
+
+a) Solicite o valor do salário bruto do usuário
+b) Calcule o valor do desconto de INSS (previdência), que é 10% do valor do bruto
+c) Calcule o valor do desconto de IR (imposto de renda), que é 20% do valor do bruto
+d) Calcule o valor do imposto sindical, que é 1/30 do bruto
+e) Exiba um alerta com uma frase como esta: "Apesar de seu bruto ser R$X, após os descontos, você receberá somente R$Y"
+
+
+14. Ajude Leandro Timista em sua nova rotina de perda de peso. Segundo seu médico o orientou:
+* Cada pão francês o faz ganhar 100 calorias
+* Cada casquinha do McDonalds o faz ganhar 300 calorias
+* Cada minuto de caminhada o faz perder 50 calorias
+* Cada minuto de musculação o faz perder 30 calorias
+
+Assim, crie um programa em HTML/JS que:
+
+a) Solicite ao usuário que informe quantos pães franceses e casquinhas consumiu no dia (são 2 campos de entrada)
+b) Solicite ao usuário que informe quantos minutos de caminhada e de musculação fez no dia (são 2 campos de entrada)
+c) Calcule quantas calorias o usuário ganhou e perdeu, chegando a um saldo (que poder ser positivo ou negativo, dependendo dos valores informados)
+d) Exiba um alerta com uma frase como esta ao final "Entre calorias que ganhou e perdeu, seu saldo de calorias no dia é de X"
+
+
+
+15. A família Lérgica está dando uma educação financeira a seus filhos desde cedo. Eles possuem 3 filhos, chamados Huguinho, Zezinho e Luizinho e cada um possui um porquinho onde depositam moedas de R$0,50 (sempre desse valor). Para saber o quanto cada filho vai economizar, crie um programa em HTML/JS que:
+
+a) Solicite a quantidade de moedas depositadas por cada filho (note que são 3 campos de entrada)
+b) Calcule quanto cada filho guardou, em R$ (lembre que sempre depositam moedas de R$0,50)
+c) Exiba 3 alertas, um para cada filho, com mensagens como esta: "O Huguinho economizou R$X pois fez Y depósitos"
+
+16 (desafio). Na matemática existe uma coisa chamada Progressão Geométrica. Usando sua fórmula, crie um programa em HTML/JS que:
+
+a) Solicite o valor do 1º termo e o valor da razão
+b) Solicite o termo que o usuário quer obter
+c) Ao clicar num botão "Calcular PG", calcular o valor do termo solicitado em b) exibir um alerta com uma frase como esta: "O Xº termo dessa PG será Y" (onde X é o valor informado em b))
+
+#Ficadica: Para calcular potência em Javascript, o operador é **
+Ex: 2 ao cubo > 2**3 ;   6 ao quadrado > 6**2
+
+Exemplos de valores para validação:
+1º termo |  razão  |   5º termo
+100          |  2         |   1600
+2              |  4         |   512
+
+_________________________________________________________________________________________________
+
+17 (fácil). Crie uma página HTML com código JS na qual:
+
+a) O usuário informa seu bairro e o número de cachorros que tem
+b) Ao clicar num botão "Análise Pet" exiba um texto abaixo dele, em cor de tom vermelho uma frase como esta: "Você mora em X e tem Y cachorros"
+
+
+18. Refaça a 17ª melhorando-a de tal forma que o nome do bairro fique em itálico e na cor azul e o número de cachorros fique sublinhado e em cor de tom laranja.
+
+
+19. Refaça a 6ª, melhorando-a de tal forma que, ao invés de mostrar 2 alertas, exiba o seguinte texto ao final:
+
+Se for homem faltam X anos p/ aposentar
+Se for mulher faltam Y anos p/ aposentar
+
+Tente reproduzir ao máximo a formatação aqui apresentada.
+
+
+
+20. Refaça a 13ª, melhorando-a de tal forma que, ao invés de mostrar um alerta, exiba o seguinte texto ao final:
+
+Apesar de seu bruto ser R$X, após os descontos, você receberá somente R$Y
+
+Tente reproduzir ao máximo a formatação aqui apresentada. Note que os valores monetários estão em negrito.
+
+
+21. Refaça a 15ª, melhorando-a de tal forma que, ao invés de mostrar um alertas, exiba o seguinte texto ao final:
+
+O Huguinho economizou R$X pois fez Y depósitos
+O Zezinho economizou R$X pois fez Y depósitos
+O Luizinho economizou R$X pois fez Y depósitos

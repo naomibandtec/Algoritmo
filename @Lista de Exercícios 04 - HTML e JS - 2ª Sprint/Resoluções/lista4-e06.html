@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Várias funções</title>
+</head>
+<body>
+    <h2>Indique seu humor</h2>
+
+    <button onclick="feliz()">Feliz</button>
+    <button onclick="neutro()">Neutro</button>
+    <button onclick="triste()">Triste</button>
+    <button onclick="pistola()">Pistola</button>
+    <br>
+
+    <img id="imagem_humor" src="">
+</body>
+</html>
+<script>
+    function feliz() {
+        imagem_humor.src='humor-feliz.jpg';
+    }
+
+    function neutro() {
+        imagem_humor.src='humor-neutro.jpg';
+    }
+
+    function triste() {
+        imagem_humor.src='humor-triste.jpg';
+    }
+
+    function pistola() {
+        imagem_humor.src='humor-pistola.jpg';
+    }    
+</script>
+

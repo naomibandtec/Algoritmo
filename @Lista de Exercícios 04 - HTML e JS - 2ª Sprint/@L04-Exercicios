@@ -1,0 +1,63 @@
+1. Crie uma página HTML que tenha a foto de uma pessoa de humor "Normal" (nem alegre nem triste).
+Abaixo da foto deve haver um botão "Ficar feliz".
+Ao clicar nele, a foto deve mudar para a de uma pessoa feliz (não precisa ser a mesma pessoa, basta ser uma foto de alguém feliz)
+
+
+2. Crie uma página HTML que tenha a foto de uma pessoa sem dinheiro na mão.
+Devem haver os seguintes campos:
+ * Quanto dinheiro terá em 6 meses
+ * Quanto dinheiro terá em 3 anos
+Ao clicar num botão "Como estarei no futuro?", devem aparecer 2 imagens abaixo dele:
+ * A primeira de uma pessoa com algum dinheiro e, ao seu lado, o valor daqui a 6 meses assim "R$X.XX"
+ * A segunda de uma pessoa com MUITO dinheiro e, ao seu lado, o valor daqui a 3 anos assim "R$X.XX" 
+
+
+
+3. Crie um programa em HTML/JS que:
+a) Solicite a idade do usuário
+b) Devem haver 2 botões abaixo: "Aposentadoria Homem" e "Aposentadoria Mulher"
+c) No primeiro botão, calcule e exiba um alert com o tempo que falta para se aposentar, se homem. Considere que um homem se aposenta com 70 anos
+d) No segundo botão, calcule e exiba um alert com o tempo que falta para se aposentar, se mulher. Considere que um mulher se aposenta com 60 anos
+
+
+
+4. Crie um programa em HTML/JS no qual:
+a) o usuário informe sua nota na escola
+b) ao clicar num botão "opinião da avó", exibir "Muito bem, que neto inteligente, porque tirou X"
+c) ao clicar num botão "opinião da mãe", exibir "Não fez mais que tua obrigação com essa nota X"
+
+Onde X é a nota que ele digitou tanto em b) quanto em c)
+
+
+5. Crie um programa em HTML/JS que:
+a) Solicite 2 números ao usuário
+b) tenha um botão para cada operação aritmética. Ao clicar em algum deles, exibir ABAIXO do botão UMA dessas frases:
+   A soma entre X e Y é Z
+   A diferença entre X e Y é Z
+   O produto entre X e Y é Z
+   A razão entre X e Y é Z        
+
+
+6. Crie um programa em HTML/JS que:
+a) Tenha os botões "Feliz", "Neutro", "Triste", "Pistola".
+b) Ao clicar neles, deve aparecer somente 1 imagem abaixo que represente o humor do texto do botão   
+ 
+
+7. Crie um programa em HTML/JS que:
+a) Solicite ao usuário seu peso e altura
+b) Ao clicar no botão "IMC Homem", calcule e exiba seu IMC considerando que é um homem
+c) Ao clicar no botão "IMC Mulher", calcule e exiba seu IMC considerando que é uma mulher
+Use a fórmula de IMC em https://centrodeobesidadeediabetes.org.br/tudo-sobre-obesidade/calculadora-de-imc/. E considere que o IMC da mulher é sempre 10% menor que o do homem.
+
+
+8. Crie um programa em HTML/JS no qual:
+a) o usuário informe sua nota na escola
+b) deve haver num botão "opinião da avó"
+c) deve haver num botão "opinião da mãe"
+d) ao clicar num botão "opinião da avó", abaixo dos botões, exibir "Muito bem, que neto inteligente, porque tirou X" e uma foto de uma vovozinha
+e) ao clicar num botão "opinião da mãe", abaixo dos botões, exibir "Não fez mais que tua obrigação com essa nota X" e uma foto de uma mãe pistola
+
+
+9. Crie um programa em HTML/JS no qual:
+a) Existam 4 botões: um para cada grande clube de futebol de São Paulo
+b) Ao clicar em cada um deles, exiba abaixo dos botões o escudo (ou uma zoação) do time cujo botão foi clicado

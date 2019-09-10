@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 1 - q07</title>
+</head>
+<body>
+
+Valor da Pizza: <input id="valor_pizza" autofocus> <br>
+Quantos amigos: <input id="amigos"> <br>
+
+<button onclick="dividir()">#lovePizza</button>
+    
+</body>
+</html>
+
+<script>
+function dividir() {
+    // Criando a variável 'valor_amigo'
+    var valor_amigo = valor_pizza.value / amigos.value;
+
+    alert(`Cada um dos ${amigos.value} amigos vai pagar R$${valor_amigo.toFixed(2)}`);
+}
+</script>

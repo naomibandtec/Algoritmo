@@ -1,0 +1,38 @@
+<!-- 9. Um clube de futebol precisa de um programa para saber quanto arrecadou por jogo. Assim, crie um programa em HTML/JS que:
+
+a) Pergunte ao usuário a quantidade de ingressos de estudante vendidos
+b) Pergunte ao usuário a quantidade de ingressos comuns vendidos
+c) Pergunte ao usuário o valor do ingresso comum
+d) Calcule a arrecadação, considerando que um ingresso de estudante custa metade do ingresso comum
+e) Exiba um alerta com uma frase assim: "A arrecadação foi de R$X" 
+ (qt_ingressoscomum.value*vlr_ingressos.value) + -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        Qual foi a quantidade de ingressos de estudante vendidos?<input id="qt_ingressosest"><br>
+        Qual foi a quantidade de ingressos comuns vendidos?<input id="qt_ingressoscomum"><br>
+        Qual é o valor do ingresso comum?<input id="vlr_ingressos"><br>
+        <button onclick="calcular()">Calcular</button>
+
+    </body>
+
+</html>
+
+<script>
+    function calcular(){
+    var total_est = (qt_ingressosest.value*vlr_ingressos.value)/2;
+    var total_com = (qt_ingressoscomum.value*vlr_ingressos.value);
+    var arrecadação = total_est + total_com;
+    alert(`A arrecadação foi de R$${arrecadação}`);
+    }
+</script>

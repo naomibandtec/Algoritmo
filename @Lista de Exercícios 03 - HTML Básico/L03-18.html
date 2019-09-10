@@ -1,0 +1,36 @@
+<!-- 17 (fácil). Crie uma página HTML com código JS na qual:
+
+a) O usuário informa seu bairro e o número de cachorros que tem
+b) Ao clicar num botão "Análise Pet" exiba um texto abaixo dele, em cor de tom vermelho uma frase como esta: "Você mora em X e tem Y cachorros"
+
+
+Refaça a 17ª melhorando-a de tal forma que o nome do bairro fique em itálico e na cor azul e o número de cachorros fique sublinhado e em cor de tom laranja.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        Qual o seu bairro: <input id="bairro"> <br>
+        Quantos cachorros vc que tem: <input id="cachorros"> <br>
+        <button onclick="mudar()">Análise Pet</button>
+        
+        <div id="div_mensagem" style="display:none">
+            Você mora em <i style="color: blue">?</i> e tem <u style="color: orange">?</u> cachorros
+        </div> 
+    </body>
+    
+</html>
+
+<script>
+   function mudar(){
+    div_mensagem.style.display = "block";
+    div_mensagem.style.color = "red";
+
+}
+</script>

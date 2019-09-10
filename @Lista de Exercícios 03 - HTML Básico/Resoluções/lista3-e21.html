@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 1 - q21</title>
+</head>
+<body>
+    
+    <h2>Família Lérgica</h2>
+    
+    Moedas que o Huguinho depositou: <input type="text" id="huguinho"> <br>
+    Moedas que o Zezinho depositou: <input type="text" id="zezinho"> <br>
+    Moedas que o Luizinho depositou: <input type="text" id="luizinho"> <br>        
+    
+    <button onclick="economias()">Calcular economias</button>
+    <br><br>
+    
+    <div id="div_mensagem" style="display: none;">
+        <ul>
+            <li>O <b style="color: red">Huguinho</b> 
+                economizou <b>R$<span id="economia_huguinho"></span></b> 
+                pois fez <u><b id="depositos_huguinho">Y</b></u> depósitos</li>
+
+            <li>O <b style="color: blue">Zezinho</b> 
+                economizou <b>R$<span id="economia_zezinho"></span></b> 
+                pois fez <u><b id="depositos_zezinho">Y</b></u> depósitos</li>
+
+            <li>O <b style="color: green">Luizinho</b> 
+                economizou <b>R$<span id="economia_luizinho"></span></b> 
+                pois fez <u><b id="depositos_luizinho">Y</b></u> depósitos</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<script>
+function economias() {
+
+    // colocando os valores nas tags corretas
+    economia_huguinho.innerHTML = huguinho.value * 0.5;
+    economia_zezinho.innerHTML = zezinho.value * 0.5;
+    economia_luizinho.innerHTML = luizinho.value * 0.5;
+
+    depositos_huguinho.innerHTML = huguinho.value;
+    depositos_zezinho.innerHTML = zezinho.value;
+    depositos_luizinho.innerHTML = luizinho.value;
+
+
+    // deixando a 'div_mensagem' visível
+    div_mensagem.style.display = 'block';
+}
+</script>

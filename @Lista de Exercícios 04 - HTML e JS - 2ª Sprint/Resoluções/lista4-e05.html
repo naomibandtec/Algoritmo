@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 4 - q05</title>
+</head>
+<body>
+    <h2>Lista 4 - q05</h2>
+
+    1º número: <input type="text" id="n1">
+    <br>
+    2º número: <input type="text" id="n2">
+    <br>    
+
+    <button onclick="somar()">Somar</button>
+    <button onclick="subtrair()">Subtrair</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>    
+
+    <div id="div_resultado"></div>
+
+</body>
+</html>
+
+<script>
+function somar() {
+    var calculo = Number(n1.value) + Number(n2.value);
+
+    div_resultado.innerHTML = `A soma entre ${n1.value} e ${n2.value} é ${calculo}`;
+}
+
+function subtrair() {
+    var calculo = Number(n1.value) - Number(n2.value);
+
+    div_resultado.innerHTML = `A diferença entre ${n1.value} e ${n2.value} é ${calculo}`;
+}
+
+function multiplicar() {
+    var calculo = Number(n1.value) * Number(n2.value);
+
+    div_resultado.innerHTML = `O produto entre ${n1.value} e ${n2.value} é ${calculo}`;
+}
+
+function dividir() {
+    var calculo = Number(n1.value) / Number(n2.value);
+
+    div_resultado.innerHTML = `A razão entre ${n1.value} e ${n2.value} é ${calculo}`;
+}
+</script>

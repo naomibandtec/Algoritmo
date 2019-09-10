@@ -1,0 +1,42 @@
+<!-- 6. Crie um programa em HTML/JS que:
+a) Tenha os botões "Feliz", "Neutro", "Triste", "Pistola".
+b) Ao clicar neles, deve aparecer somente 1 imagem abaixo que represente o humor do texto do botão    -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <button onclick="ficarFeliz()">Feliz</button>
+        <button onclick="ficarNeutro()">Neutro</button>
+        <button onclick="ficarTriste()">Triste</button>
+        <button onclick="ficarPistola()">Pistola</button><br><br>
+
+        <img src="" alt="" id="imagem">
+
+
+    </body>
+</html>
+
+<script>
+    function ficarFeliz(){
+        imagem.src= "https://imagensemoldes.com.br/wp-content/uploads/2018/06/Emoji-Feliz-PNG.png";
+    }
+
+    function ficarNeutro(){
+        imagem.src= "https://img.r7.com/images/2015/01/16/78t3lzmxhe_6ogjr0eowv_file";
+    }
+
+    function ficarTriste(){
+        imagem.src= "https://imagensemoldes.com.br/wp-content/uploads/2018/06/Emoji-Triste-PNG.png";
+    }
+
+    function ficarPistola(){
+        imagem.src= "https://i.pinimg.com/originals/ab/b4/33/abb4338732cb275f59e8ec17aca10671.png";
+    }
+
+</script>

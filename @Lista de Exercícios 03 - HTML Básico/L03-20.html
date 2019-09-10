@@ -1,0 +1,50 @@
+<!-- 13. Antônia Legre vai começar em seu primeiro emprego com carteira assinada após ser efetivada num estágio numa empresa de TI parceira da Bandtec. Enfim ela descobriu que quando um funcionário tem um salário de R$3.000,00, na verdade não cai esse valor em sua conta, pois pela CLT temos vários descontos. Crie um programa em HTML/JS que:
+
+a) Solicite o valor do salário bruto do usuário
+b) Calcule o valor do desconto de INSS (previdência), que é 10% do valor do bruto
+c) Calcule o valor do desconto de IR (imposto de renda), que é 20% do valor do bruto
+d) Calcule o valor do imposto sindical, que é 1/30 do bruto
+e) Exiba um alerta com uma frase como esta: "Apesar de seu bruto ser R$X, após os descontos, você receberá somente R$Y" -->
+
+
+<!-- 20. Refaça a 13ª, melhorando-a de tal forma que, ao invés de mostrar um alerta, exiba o seguinte texto ao final:
+
+Apesar de seu bruto ser R$X, após os descontos, você receberá somente R$Y
+
+Tente reproduzir ao máximo a formatação aqui apresentada. Note que os valores monetários estão em negrito. -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        Qual o valor do seu salário bruto do usuário? <input id="salario"> <br>
+        <button onclick="calcular()">Descubra quanto vc vai receber</button>
+        
+        <div id="msg" style="color: blue; display:none" >
+           
+            <p >Apesar de seu bruto ser <b style="color: green">R$?</b>, após os descontos, você receberá somente <b style="color: red">R$?.</b></p>
+
+        </div> 
+
+    </body>
+</html>
+
+<script>
+    function calcular(){
+        msg.style.display= "block";
+
+        var inss = salario.value*0.1;
+        var ir = salario.value*0.2;
+        var is = salario.value/30;
+        var descontos = inss + ir + is;
+        var salario_liquido=salario.value-descontos;
+
+    
+        alert(`Apesar de seu bruto ser R$${salario.value}, após os descontos, você receberá somente R$${salario.value-descontos}`);
+    }
+</script>

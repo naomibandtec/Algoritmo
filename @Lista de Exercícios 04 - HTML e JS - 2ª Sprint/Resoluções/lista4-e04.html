@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 4 - q04</title>
+</head>
+<body>
+    <h2>Lista 4 - q04</h2>
+
+    Sua nota: <input type="text" id="nota">
+    <br>
+    <button onclick="mae()">Opinião da mãe</button>
+    <button onclick="vovo()">Opinião da vó</button>
+</body>
+</html>
+
+<script>
+function mae() {
+ var frase = `Não fez mais que tua obrigação com essa nota ${nota.value}`;
+
+ alert(frase);
+
+}
+
+function vovo() {
+    var frase = `Muito bem, que neto inteligente, porque tirou ${nota.value}`;
+
+    alert(frase);
+}
+</script>

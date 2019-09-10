@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lista 1 - q08</title>
+</head>
+<body>
+
+Valor da passagem: <input id="passagem" autofocus> <br>
+Quantas viagens: <input id="viagens"> <br>
+
+<button onclick="economizar()">Ver economia</button>
+    
+</body>
+</html>
+
+<script>
+function economizar() {
+    var total_gasto = passagem.value * viagens.value;
+    var economia = total_gasto / 2;
+
+    alert(`Você economizará R$${economia.toFixed(2)} por mês`);
+}
+</script>

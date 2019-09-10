@@ -1,0 +1,34 @@
+<!-- 11. Na faculdade Bandtec o aluno tem 2 notas: A da "avaliação continuada" e a da "avaliação semestral". A média final é a soma simples entre 40% da "continuada" e 60% da "semestral". Assim, para ajudar um aluno para saber o quanto precisa para passar e estagiar em empresas como Easynvest, C6Bank, Tivit, Banco Safra, Deloitte, HP etc, crie um programa em HTML/JS que:
+
+a) Solicite a nota que ele tirou na "continuada" e na "semestral"
+b) Solicite o nome do aluno
+c) Calcule sua média
+d) Exiba uma frase como esta "A média de NOME será de MEDIA". Onde NOME é o valor informado em b) e MEDIA, o valor calculado em c) -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+
+    <body>
+        Qual a nota vc tirou na avaliação continuada: <input id="av_continuada"> e na avaliação semestral:<input id="av_semestral"> <br>
+        Qual o seu nome? <input id="aluno">
+        <button onclick="calcular()">Saiba a sua media</button>
+    
+    </body>
+</html>
+
+<script>
+function calcular(){
+    var nota_continuada = av_continuada.value * 0.4;
+    var nota_semestral = av_semestral.value * 0.6;
+    
+    alert(`A média de ${aluno.value} será de ${nota_continuada+nota_semestral}`);
+}
+</script>
+
+

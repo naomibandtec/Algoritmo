@@ -1,0 +1,55 @@
+<!-- 7. Crie um programa em HTML/JS que:
+a) Solicite ao usuário seu peso e altura
+b) Ao clicar no botão "IMC Homem", calcule e exiba seu IMC considerando que é um homem
+c) Ao clicar no botão "IMC Mulher", calcule e exiba seu IMC considerando que é uma mulher
+Use a fórmula de IMC em https://centrodeobesidadeediabetes.org.br/tudo-sobre-obesidade/calculadora-de-imc/. E considere que o IMC da mulher é sempre 10% menor que o do homem. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        Qual a sua altura:<input id="altura1" placeholder="altura"><br> <br>
+        Qual o seu peso:<input id="peso1" placeholder="peso"><br> <br>
+        <button onclick="ImcHomem();">IMC Homem</button>
+        <button onclick="ImcMulher()">IMC Mulher</button><br><br>
+
+        <div id="msg">
+
+        </div>
+
+    </body>
+
+    
+</html>
+
+<script>
+    function ImcHomem(){
+        var peso = Number(peso1.value); 
+        var altura = Number(altura1.value);
+
+        var imc = peso / (altura * altura);
+
+        msg.innerHTML = `Seu imc é ${imc}`;
+
+    
+    }
+
+    function ImcMulher(){
+        var peso = Number(peso1.value); 
+        var altura = Number(altura1.value);
+
+        var imc = peso / (altura * altura);
+
+        msg.innerHTML = `Seu imc é ${imc*0.9}`;
+
+    
+    }
+
+
+</script>
